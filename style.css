@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* General Body Styles (unchanged) */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(120deg, #f6d365, #fda085);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+
+/* Center the .intro-container ONLY on the introduction page */
+
+.intro-page .intro-container {
+    text-align: center;
+    max-width: 800px;
+    padding: 40px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out forwards;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Logo Container */
+
+.logo-container {
+    margin-bottom: 30px;
+}
+
+.logo {
+    max-width: 120px;
+    /* Slightly larger logo */
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Header Text */
+
+h1 {
+    font-size: 3.2rem;
+    color: #ff5722;
+    /* Vibrant orange color */
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* Paragraph Text */
+
+p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+
+
+/* Intro Text Section */
+
+.intro-text {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+
+/* Start Button */
+
+.start-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #ff5722;
+    /* Matching button color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #e64a19;
+    transform: translateY(-5px);
+}
+
+
+/* Hover Effect for Button */
+
+.start-button:active {
+    transform: translateY(2px);
+}
+
+
+/* Animation Keyframes */
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Main Container */
+
+.container,
+.main-container {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Header Section */
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+    background: #4caf50;
+    padding: 40px 20px;
+    border-radius: 15px 15px 0 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+
+/* Form Section */
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease;
+}
+
+input:focus,
+select:focus,
+button:focus {
+    border: 2px solid #4caf50;
+    outline: none;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+/* Card Styles */
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p strong {
+    color: #4caf50;
+}
+
+.card a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.card a:hover {
+    color: #388e3c;
+}
+
+
+/* Result Section */
+
+.result-container {
+    margin-top: 30px;
+}
+
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+
+/* Back Button */
+
+.back-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.back-button button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button button:hover {
+    background-color: #d32f2f;
+}
+
+
+/* Additional Styling for Input Fields */
+
+input[type="text"],
+select {
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+input[type="text"]:focus,
+select:focus {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+select {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+/* Card Container */
+
+.card-container {
+    padding: 20px;
+    background: #fafafa;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+
+/* No Results */
+
+.no-results {
+    text-align: center;
+    color: #777;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.logo-container {
+    margin-bottom: 30px;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+
+/* Mobile Responsiveness */
+
+@media (max-width: 768px) {
+    .container,
+    .main-container {
+        padding: 15px;
+    }
+    header h1 {
+        font-size: 2.2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    .result-grid {
+        grid-template-columns: 1fr;
+    }
+    input,
+    select,
+    button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        padding: 10px;
+    }
+}

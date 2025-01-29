@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Class 11 and 12 Book Search</h1>
+
+        <!-- Subject Dropdown (Required) -->
+        <select id="subjectInput" required>
+            <option value="">Select Subject (required)</option>
+        </select>
+
+        <!-- Book Name Input (Optional) -->
+        <input type="text" id="bookInput" placeholder="Enter book name (optional)" />
+
+        <!-- Class Dropdown (Optional) -->
+        <select id="classInput">
+            <option value="">Select Class (optional)</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+
+        <!-- Search Button -->
+        <button id="searchButton">Search</button>
+        <!-- Hidden by default, will be shown when Chemistry is selected -->
+        <div id="chemistryOptionsContainer" style="display: none;">
+            <label>
+        <input type="checkbox" name="chemistryType" value="organic"> Organic Chemistry
+    </label><br>
+            <label>
+        <input type="checkbox" name="chemistryType" value="inorganic"> Inorganic Chemistry
+    </label><br>
+            <label>
+        <input type="checkbox" name="chemistryType" value="general"> General Chemistry
+    </label>
+        </div>
+
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
